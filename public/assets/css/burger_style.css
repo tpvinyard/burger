@@ -1,0 +1,12 @@
+body {
+    background-image: url("../img/burger-background.jpg");
+}
+
+.container {
+    background-color: #FEDC18;
+    padding: 15px;
+}
+
+#burger-image {
+    height: 200px;
+}
