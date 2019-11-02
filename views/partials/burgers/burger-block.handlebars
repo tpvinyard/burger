@@ -1,7 +1,15 @@
-<li style="margin-bottom: 3px;">
-	{{burger_name}}
-
-	<button class="change-devoured btn btn-dark" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		{{#if devoured}}Devour!{{else}}Make again!{{/if}}
-	</button>
-</li>
+{{#if devoured}}
+    <li style="margin-bottom: 3px;">
+        {{burger_name}}
+        <button class="change-devoured btn btn-dark" data-id="{{id}}" data-newdevoured="{{devoured}}">
+            Devour!
+        </button>
+    </li>
+{{else}}
+    <li style="margin-bottom: 3px; ">
+        {{burger_name}}
+        <button class="change-devoured btn btn-dark" data-id="{{id}}" data-newdevoured="{{devoured}}" disabled>
+            Devoured.
+        </button>
+    </li>
+{{/if}}
